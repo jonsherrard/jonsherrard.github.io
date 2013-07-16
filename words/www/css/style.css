@@ -1,0 +1,26 @@
+html, body, * {
+	font-family: 'Gilda Display', serif;
+	/*color: #34495e;*/
+	color: #242424;
+}
+
+html {
+	font-size: 1.4rem;
+}
+
+h1, h2, h3 {
+	text-transform: capitalize;
+}
+
+article {
+	display: block;
+	min-width: 320px;
+	max-width: 460px;
+	padding: 20px;
+	margin: auto;
+
+}
+
+footer {
+	padding:20px;
+}

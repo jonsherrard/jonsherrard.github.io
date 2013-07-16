@@ -1,0 +1,12 @@
+!!!
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title #{title}
+        link(href='http://fonts.googleapis.com/css?family=Gilda+Display', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', href='#{baseUrl}/www/css/style.css')
+        if (typeof(googleAnalytics) !== 'undefined')
+            include ga
+    body(onload='prettyPrint()')
+        block content
