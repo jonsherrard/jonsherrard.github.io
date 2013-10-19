@@ -1,0 +1,21 @@
+{
+  "name": "jonsherrard.github.io",
+  "version": "0.0.1",
+  "description": "Blog and Home Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonsherrard/jonsherrard.github.io.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jonsherrard/jonsherrard.github.io/issues"
+  },
+  "dependencies": {
+    "wintersmith": "~2.0.7"
+  }
+}
