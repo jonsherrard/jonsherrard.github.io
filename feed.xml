@@ -5,17 +5,18 @@
     <atom:link href="http://jonsherrard.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://jonsherrard.com</link>
     <description>Being alive, being a developer.</description>
-    <pubDate>Sat, 23 Mar 2013 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 19 Oct 2013 01:00:00 +0100</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>My Grunt Workflow</title>
-      <link>http://jonsherrard.com/articles/hello-world/</link>
-      <pubDate>Sat, 23 Mar 2013 00:00:00 +0000</pubDate>
-      <guid isPermaLink="true">http://jonsherrard.com/articles/hello-world/</guid>
+      <link>http://jonsherrard.com/articles/my-grunt-workflow/</link>
+      <pubDate>Sat, 19 Oct 2013 01:00:00 +0100</pubDate>
+      <guid isPermaLink="true">http://jonsherrard.com/articles/my-grunt-workflow/</guid>
       <author></author>
       <description>&lt;p&gt;I‘m just making a quick note of my Grunt workflow. I’ve taken to putting a real chunk of time and effort into it now that I know the benefits.
-I use Grunt to maintain ‘source’ and ‘compiled’ folder trees. I can then keep node_modules and compiled files out of my repositories.&lt;/p&gt;
+I use Grunt to maintain ‘source’ and ‘compiled’ folder trees. I can then keep node_modules and compiled files out of my repositories.     &lt;/p&gt;
+&lt;p&gt;Here is the basic file structure of a Node Server and it&amp;#39;s static files:      &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;├── package.json               &amp;lt;- app configuration
 ├── compiled
 │   ├── server
@@ -24,7 +25,6 @@ I use Grunt to maintain ‘source’ and ‘compiled’ folder trees. I can then
 │   │   │   └── example-route.js
 │   │   ├── modules
 │   │   │   ├── example-modules.js
-│   │   │   └── taketori_monogatari.jpg
 │   │   ├── views
 │   │   │   └── index.jade
 │   ├── static
