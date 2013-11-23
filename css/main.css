@@ -342,6 +342,28 @@ a:active {
   -ms-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+.graph {
+  display: table;
+  table-layout: fixed;
+  min-width: 100%;
+}
+.graph .bar-wrapper {
+  display: table-cell;
+  height: 100%;
+  width: 1px;
+  position: relative;
+}
+.graph .bar-wrapper .bar {
+  background: -webkit-linear-gradient(bottom, #55efcb, #5bcaff);
+  background: -moz-linear-gradient(bottom, #55efcb, #5bcaff);
+  background: -o-linear-gradient(bottom, #55efcb, #5bcaff);
+  background: -ms-linear-gradient(bottom, #55efcb, #5bcaff);
+  background: linear-gradient(to top, #55efcb, #5bcaff);
+  width: 3px;
+  margin: auto;
+  display: block;
+  height: 300px;
+}
 @-moz-keyframes fadeInLeft {
   0% {
     opacity: 0;

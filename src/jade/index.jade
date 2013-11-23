@@ -2,8 +2,15 @@ extends layout
 
 block content
 
-  h1.page-title.fade-in-left #{title}
-  .after-load.fade-in
-    h2.page-subtitle #{subtitle}
+  #content
+    h1.page-title.fade-in-left #{title}
+    .after-load.fade-in
+      h2.page-subtitle #{subtitle}
 
-    h3 Working on things.
+      h3 Working on things.
+
+  .graph
+    - var i = 80
+    - while(i--)
+      .bar-wrapper
+        .bar
