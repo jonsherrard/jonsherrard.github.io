@@ -13,14 +13,53 @@ html, body
   color white
   background linear-gradient(top, #52EDC7, #5AC8FB)
 
+a, a:visited, a:active
+  color white
+  text-decoration none
+
 #content
   max-width 1024px
   margin auto
+  padding 40px
 
 
 .page-title
   font-size 5em
   color white
 
-.page-sub-title
+.page-subtitle
   font-size 3em
+
+@media(max-width:720px)
+  #content
+    padding 20px
+  .page-title
+    font-size 3em
+  .page-subtitle
+    font-size 2em
+
+@keyframes fadeInLeft
+  0%
+    opacity 0
+    transform: translateX(-80px)
+  100%
+    opacity 1
+    transform translateX(0)
+
+.fade-in-left
+  animation-name fadeInLeft
+  animation-duration 1s
+  animation-timing-function ease-out
+  animation-fill-mode both
+
+@keyframes fadeIn
+  0%
+    opacity 0
+  100% 
+    opacity 1
+
+.fade-in
+  animation-delay 0.5s
+  animation-duration 1s
+  animation-fill-mode both
+  animation-name fadeIn
