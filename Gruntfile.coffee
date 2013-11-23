@@ -11,22 +11,31 @@ module.exports = (grunt) ->
           expand: true
           cwd: 'src/jade/'
           src: ['index.jade']
-          dest: 'compiled/'
+          dest: ''
           ext: '.html'
         ]
 
     stylus:
       compile:
         options:
-          use: [ require('nib') ]
-          compress: true
+          use: [ require('nib'), require('normalize') ]
+          compress: false
         files:
-          'compiled/css/main.css' : 'src/stylus/main.styl'
+          'css/main.css' : 'src/stylus/main.styl'
 
     coffee:
       compile:
         files:
-          'compiled/js/script.js' : 'src/coffee/script.coffee'
+          'js/script.js' : 'src/coffee/script.coffee'
+
+    rsync:
+      options:
+        recursive: true
+      fonts:
+        options:
+          src: 'src/fonts/'
+          dest: './fonts'
+        
 
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
