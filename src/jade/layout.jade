@@ -10,8 +10,5 @@ html
     link(rel='stylesheet', href='css/main.css?v=#{new Date().getTime()}')
   body
     block content
-    each script in scripts
-      script(type='text/javascript', src='#{script}')
-    script(type='text/javascript', src='js/script.js')
 
 
