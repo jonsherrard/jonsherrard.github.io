@@ -1,8 +1,13 @@
 !!!
 html
   head
-    title #{title}
-    link(rel='stylesheet', href='css/main.css')
+    title Hi.
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Jonathon Sherrard is a developer. He enjoys using Node.js and Backbone. Part-time Human on the side.')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+ 
+    link(rel='stylesheet', href='css/main.css?v=#{new Date().getTime()}')
   body
     #content
       block content
