@@ -2,6 +2,7 @@
   display table
   table-layout fixed
   min-width 100%
+  cursor pointer
   .bar-wrapper
     display table-cell
     height 100%
@@ -13,6 +14,9 @@
       margin auto
       display block
       height 300px
+    &:hover
+      .bar
+        background linear-gradient(top, #55EFCB, #5BCAFF)
 
 @media (max-width: 720px)
   .graph

@@ -16,6 +16,9 @@ html, body
 a, a:visited, a:active
   color white
   text-decoration none
+  cursor pointer
+  &:hover
+    text-transform lowercase
 
 #content
   max-width 1024px
@@ -26,9 +29,15 @@ a, a:visited, a:active
 .page-title
   font-size 5em
   color white
+  cursor default
+  &:hover
+    text-transform lowercase
 
 .page-subtitle
   font-size 3em
+  cursor default
+  &:hover
+    text-transform lowercase
 
 @media(max-width:720px)
   #content

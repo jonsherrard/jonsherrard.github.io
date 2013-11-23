@@ -274,6 +274,12 @@ a:visited,
 a:active {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:visited:hover,
+a:active:hover {
+  text-transform: lowercase;
 }
 #content {
   max-width: 1024px;
@@ -283,9 +289,17 @@ a:active {
 .page-title {
   font-size: 5em;
   color: #fff;
+  cursor: default;
+}
+.page-title:hover {
+  text-transform: lowercase;
 }
 .page-subtitle {
   font-size: 3em;
+  cursor: default;
+}
+.page-subtitle:hover {
+  text-transform: lowercase;
 }
 @media (max-width:720px) {
   #content {
@@ -346,6 +360,7 @@ a:active {
   display: table;
   table-layout: fixed;
   min-width: 100%;
+  cursor: pointer;
 }
 .graph .bar-wrapper {
   display: table-cell;
@@ -363,6 +378,13 @@ a:active {
   margin: auto;
   display: block;
   height: 300px;
+}
+.graph .bar-wrapper:hover .bar {
+  background: -webkit-linear-gradient(top, #55efcb, #5bcaff);
+  background: -moz-linear-gradient(top, #55efcb, #5bcaff);
+  background: -o-linear-gradient(top, #55efcb, #5bcaff);
+  background: -ms-linear-gradient(top, #55efcb, #5bcaff);
+  background: linear-gradient(to bottom, #55efcb, #5bcaff);
 }
 @media (max-width: 720px) {
   .graph {
