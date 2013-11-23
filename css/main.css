@@ -369,22 +369,22 @@ a:active:hover {
   position: relative;
 }
 .graph .bar-wrapper .bar {
-  background: -webkit-linear-gradient(bottom, #55efcb, #5bcaff);
-  background: -moz-linear-gradient(bottom, #55efcb, #5bcaff);
-  background: -o-linear-gradient(bottom, #55efcb, #5bcaff);
-  background: -ms-linear-gradient(bottom, #55efcb, #5bcaff);
-  background: linear-gradient(to top, #55efcb, #5bcaff);
+  background: -webkit-linear-gradient(bottom, #c644fc, #5bcaff);
+  background: -moz-linear-gradient(bottom, #c644fc, #5bcaff);
+  background: -o-linear-gradient(bottom, #c644fc, #5bcaff);
+  background: -ms-linear-gradient(bottom, #c644fc, #5bcaff);
+  background: linear-gradient(to top, #c644fc, #5bcaff);
   width: 3px;
   margin: auto;
   display: block;
   height: 300px;
 }
 .graph .bar-wrapper:hover .bar {
-  background: -webkit-linear-gradient(top, #55efcb, #5bcaff);
-  background: -moz-linear-gradient(top, #55efcb, #5bcaff);
-  background: -o-linear-gradient(top, #55efcb, #5bcaff);
-  background: -ms-linear-gradient(top, #55efcb, #5bcaff);
-  background: linear-gradient(to bottom, #55efcb, #5bcaff);
+  background: -webkit-linear-gradient(top, #c644fc, #5bcaff);
+  background: -moz-linear-gradient(top, #c644fc, #5bcaff);
+  background: -o-linear-gradient(top, #c644fc, #5bcaff);
+  background: -ms-linear-gradient(top, #c644fc, #5bcaff);
+  background: linear-gradient(to bottom, #c644fc, #5bcaff);
 }
 @media (max-width: 720px) {
   .graph {
