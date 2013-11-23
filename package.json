@@ -1,0 +1,25 @@
+{
+  "name": "jon2",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonsherrard/jonsherrard.github.io.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jonsherrard/jonsherrard.github.io/issues"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-stylus": "~0.10.0",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt": "~0.4.2",
+    "grunt-rsync": "~0.2.1"
+  }
+}
