@@ -4,14 +4,13 @@
 global-normalize()
 html, body
   height  100%
-  font-family 'geomancyhairline', 'Arial', 'Helvetica', sans-serif
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
   font-size 16px
   font-size 100%
   line-height 1.46
   -webkit-font-smoothing: antialiaed
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
-  color white
-  background linear-gradient(top, #52EDC7, #5AC8FB)
+  color #333
 
 a, a:visited, a:active
   color white
@@ -21,27 +20,34 @@ a, a:visited, a:active
     text-transform lowercase
 
 #content
-  max-width 1024px
-  margin auto
-  padding 40px
+  background-size cover
+  min-width 100%
+  max-height 400px
+  overflow hidden
+  img
+    width 100%
+    height auto
+    position relative
+    bottom 300px
+
 
 
 .page-title
   font-size 5em
-  color white
+  text-align center
+  color #333
   cursor default
-  &:hover
-    text-transform lowercase
 
 .page-subtitle
   font-size 3em
   cursor default
-  &:hover
-    text-transform lowercase
+  text-align center
 
 @media(max-width:720px)
   #content
-    padding 20px
+    img
+      bottom 0px
+      height auto
   .page-title
     font-size 3em
   .page-subtitle

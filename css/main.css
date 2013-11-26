@@ -256,18 +256,13 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'geomancyhairline', 'Arial', 'Helvetica', sans-serif;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
   font-size: 16px;
   font-size: 100%;
   line-height: 1.46;
   -webkit-font-smoothing: antialiaed;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-  color: #fff;
-  background: -webkit-linear-gradient(top, #52edc7, #5ac8fb);
-  background: -moz-linear-gradient(top, #52edc7, #5ac8fb);
-  background: -o-linear-gradient(top, #52edc7, #5ac8fb);
-  background: -ms-linear-gradient(top, #52edc7, #5ac8fb);
-  background: linear-gradient(to bottom, #52edc7, #5ac8fb);
+  color: #333;
 }
 a,
 a:visited,
@@ -282,28 +277,34 @@ a:active:hover {
   text-transform: lowercase;
 }
 #content {
-  max-width: 1024px;
-  margin: auto;
-  padding: 40px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+#content img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 300px;
 }
 .page-title {
   font-size: 5em;
-  color: #fff;
+  text-align: center;
+  color: #333;
   cursor: default;
-}
-.page-title:hover {
-  text-transform: lowercase;
 }
 .page-subtitle {
   font-size: 3em;
   cursor: default;
-}
-.page-subtitle:hover {
-  text-transform: lowercase;
+  text-align: center;
 }
 @media (max-width:720px) {
-  #content {
-    padding: 20px;
+  #content img {
+    bottom: 0px;
+    height: auto;
   }
   .page-title {
     font-size: 3em;
