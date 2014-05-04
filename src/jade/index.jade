@@ -1,43 +1,22 @@
-!!!
-html
-    include templates/header
-    body
-        .body-wrapper
-            .container.body-container
-                .row
-                .body-wrapper
-            .container.image-container
-                .row
-                    .span8.offset2
-                        h1.center Jonathon Sherrard. Computerist.
-        .body-wrapper
-            .container.body-container
-                .row
-                    .span8.offset2
-                        img(src='www/img/laptop-front.png')#screen-image
-                        p.center (This is my actual screen).
-        .body-wrapper
-            .container.body-container
-                .row
-                    .span6.offset3
-                        p
-                            | I'm a JavaScript developer based in London.
-                        p 
-                            | You can e-mail me on 
-                            a(herf="mailto:j@andthats.it") j@andthats.it
-                        p
-                            | You can find me on twitter at 
-                            a(href="http://twitter.com/jshez") @jshez
-                        p
-                            | I do some writing at 
-                            a(href="http://verytr.es") verytr.es
-                        p
-                            | You can find my code, including this site, on 
-                            a(href="http://github.com/jonsherrard") github.com/jonsherrard
-        script
-            var _gaq=[['_setAccount','UA-38604899-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-                                
-                            
+extends layout
+
+block page
+  .parent
+    .wrapper
+      span.top-row Jonathon
+    .wrapper
+      span.bottom-row Sherrard
+    .wrapper
+      hr
+    .wrapper
+      span.small Computerist
+    .wrapper
+      span.small &mdash;
+    .wrapper
+      a(href="mailto:?subject=HTML-O%20JON!&body=Hi%2C%0A%0A"): span.very-small j@andthats.it
+    .wrapper
+      a(href="http://github.com/jonsherrard"): span.very-small github
+    .wrapper
+      a(href="http://twitter.com/jshez"): span.very-small @jshez
+    .wrapper
+      a(href="http://verytr.es"): span.very-small verytr.&eacute;s
