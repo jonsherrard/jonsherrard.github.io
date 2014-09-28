@@ -1,0 +1,30 @@
+@import 'nib'
+@import 'normalize.styl'
+@import 'atoms/breakpoints.styl'
+@import 'atoms/generic.styl'
+@import 'atoms/type.styl'
+
+// Links
+linkColor = #c0392b
+a, a:visited
+  color linkColor
+  text-decoration none
+  &:hover
+    color darker(linkColor, 40%)
+
+header, article
+  padding 0 10px
+  @media smallTabletsAndUp
+    padding 0 20px
+  @media ipadAndUp
+    display block
+    margin auto
+    width 660px
+
+header
+  h1
+    font-size 1.5em
+  h2
+    font-size 1.2em
+  h3
+    font-size 1em
